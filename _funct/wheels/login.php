@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 class login{
 
 	public function receiveData($user, $pasw){

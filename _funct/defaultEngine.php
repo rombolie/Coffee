@@ -1,14 +1,14 @@
 <?php session_start();
 
-include './wheels/db.php';
-include './wheels/mkUser.php';
-include './wheels/login.php';
-include './wheels/validateUser.php';
+require '_funct/wheels/db.php';
+require '_funct/wheels/login.php';
+//include $_SERVER['DOCUMENT_ROOT']__.".'/coffee/_funct/wheels/db.php";
+//include ".$_SERVER['DOCUMENT_ROOT']".'/coffee/_funct/wheels/login.php";
 
 
 //If Login
+error_reporting(0);
 if ($_POST['login']) {
-	include 'db.php';
 	//make the validkeycheck
 	//dbconnnect->validatekey($key)
 	$login = new login();

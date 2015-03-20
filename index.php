@@ -10,8 +10,6 @@
 	</head>
 	<body>
 	<?php 
-		error_reporting(0); 
-		session_start();
 		if($_SESSION['user']){
 			echo "<div class='goToManuBar'>
 				<a href='?A=logout' class='customBTN'>Logout</a><br>
